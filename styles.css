@@ -23,6 +23,39 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* PC Bang Navigation Styling */
+.pcbang-navbar {
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid #dc2626;
+}
+
+.pcbang-navbar .nav-name {
+    color: #dc2626;
+}
+
+.pcbang-navbar .nav-link {
+    color: #64748b;
+}
+
+.pcbang-navbar .nav-link:hover, 
+.pcbang-navbar .nav-link.active {
+    color: #dc2626;
+}
+
+.pcbang-navbar .nav-link::after {
+    background: #dc2626;
+}
+
+.pcbang-navbar .toggle-btn {
+    background: linear-gradient(45deg, #dc2626, #991b1b);
+    box-shadow: 0 2px 10px rgba(220, 38, 38, 0.3);
+}
+
+.pcbang-navbar .toggle-btn:hover {
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,6 +63,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+}
+
+.toggle-btn {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+}
+
+.toggle-btn:active {
+    transform: translateY(0);
 }
 
 .nav-menu {
@@ -510,4 +565,265 @@ html {
 /* Active section highlighting */
 .section.active {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Alternate Page Styles */
+.alternate-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 100%);
+}
+
+/* PC Bang Intro Section */
+.pcbang-intro-section {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, #000000 0%, #1f1f1f 50%, #dc2626 100%);
+    color: white;
+    position: relative;
+}
+
+.pcbang-intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23dc2626" fill-opacity="0.1"><polygon points="30,0 60,30 30,60 0,30"/></g></svg>');
+    opacity: 0.3;
+}
+
+.pcbang-intro-section .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.pcbang-intro-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #dc2626;
+}
+
+.pcbang-intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.pcbang-intro-section .section-title {
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.pcbang-intro-section .section-title::after {
+    background: #dc2626;
+    left: 0;
+    transform: none;
+}
+
+.pcbang-intro-section .stat-item {
+    background: rgba(220, 38, 38, 0.2);
+    border: 1px solid #dc2626;
+    backdrop-filter: blur(10px);
+}
+
+.pcbang-intro-section .stat-number {
+    color: #dc2626;
+}
+
+.pcbang-intro-section .stat-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* PC Bang Experiences Section */
+.pcbang-experiences-section {
+    padding: 4rem 0;
+    background: #1a1a1a;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.experience-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid #dc2626;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #dc2626, #991b1b);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(220, 38, 38, 0.3);
+    border-color: #dc2626;
+}
+
+.experience-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #dc2626, #991b1b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+}
+
+.experience-card h4 {
+    font-size: 1.2rem;
+    color: #dc2626;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.experience-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.pcbang-experiences-section .section-title {
+    color: #dc2626;
+}
+
+.pcbang-experiences-section .section-title::after {
+    background: linear-gradient(45deg, #dc2626, #991b1b);
+}
+
+/* PC Bang Comparison Section */
+.pcbang-comparison-section {
+    padding: 4rem 0;
+    background: #0f0f0f;
+}
+
+.pcbang-comparison-section .section-title {
+    color: #dc2626;
+}
+
+.pcbang-comparison-section .section-title::after {
+    background: linear-gradient(45deg, #dc2626, #991b1b);
+}
+
+.pcbang-comparison-section .comparison-row {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.pcbang-comparison-section .comparison-header {
+    background-color: #dc2626;
+    color: white;
+    border-bottom: 2px solid #991b1b;
+}
+
+.pcbang-comparison-section .comparison-label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pcbang-comparison-section .comparison-item {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 1px solid #dc2626;
+}
+
+.pcbang-comparison-section .comparison-item h4 {
+    color: #dc2626;
+}
+
+.pcbang-comparison-section .comparison-item p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* PC Bang Reflection Section */
+.pcbang-reflection-section {
+    padding: 4rem 0;
+    background: #1a1a1a;
+}
+
+.pcbang-reflection-section .section-title {
+    color: #dc2626;
+}
+
+.pcbang-reflection-section .section-title::after {
+    background: linear-gradient(45deg, #dc2626, #991b1b);
+}
+
+.pcbang-reflection-section .quote-section {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    box-shadow: 0 8px 30px rgba(220, 38, 38, 0.3);
+}
+
+.pcbang-reflection-section .reflection-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 1px solid #333;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+}
+
+.pcbang-reflection-section .reflection-card h4 {
+    color: #dc2626;
+}
+
+.pcbang-reflection-section .reflection-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile Responsive for PC Bang */
+@media (max-width: 768px) {
+    .toggle-btn {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .pcbang-intro-section .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .pcbang-intro-section {
+        padding: 6rem 0 3rem;
+    }
+    
+    .pcbang-intro-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .pcbang-intro-content p {
+        font-size: 1rem;
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .experience-card {
+        padding: 1.5rem;
+    }
+    
+    .comparison-visual {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
