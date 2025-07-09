@@ -25,7 +25,7 @@ body {
 
 /* PC Bang Navigation Styling */
 .pcbang-navbar {
-    background: rgba(20, 20, 20, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 2px solid #dc2626;
 }
