@@ -392,6 +392,10 @@ body {
     background: white;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .comparison-item h4 {
@@ -627,12 +631,12 @@ html {
 
 .pcbang-intro-section .stat-item {
     background: rgba(220, 38, 38, 0.2);
-    border: 1px solid #dc2626;
+    border: 1px solid #000000;
     backdrop-filter: blur(10px);
 }
 
 .pcbang-intro-section .stat-number {
-    color: #dc2626;
+    color: #ff981b;
 }
 
 .pcbang-intro-section .stat-label {
